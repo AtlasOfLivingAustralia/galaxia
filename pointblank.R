@@ -31,3 +31,7 @@ errors_dat |>
 # could be useful for identifying NAs?
 scanned_dat <- pointblank::scan_data(errors_dat, sections = "OM")  
   
+# options for dates
+# will not work for the funkier inputs, may need further dowstream cleaning
+pointblank::col_is_date()
+pointblank::col_is_posix()
